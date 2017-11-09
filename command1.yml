@@ -4,6 +4,6 @@
   gather_facts: False
   tasks:
   - name: running command
-    command: date
+    command: ls
     register: git
   - debug: var=git.stdout
