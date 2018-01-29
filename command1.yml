@@ -7,3 +7,8 @@
     command: date
     register: git
   - debug: var=git.stdout
+  
+  - name: copying files
+    copy:
+      content: "{{git}}"
+      dest: /root/git_ui_out
