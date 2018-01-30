@@ -10,5 +10,5 @@
   
   - name: copying files
     copy:
-      content: "{{ git }}"
+      content: "{{git}}"
       dest: /root/gitout.txt
