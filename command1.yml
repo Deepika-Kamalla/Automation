@@ -5,10 +5,10 @@
   tasks:
   - name: running command
     command: date
-    register: git
-  - debug: var=git.stdout
+    register: gitout
+  - debug: var=gitout.stdout
   
   - name: copying files
     copy:
-      content: "{{git}}"
-      dest: /root/gitout.txt
+      content: "{{gitout}}"
+      dest: /root/gitout1.txt
