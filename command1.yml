@@ -11,4 +11,4 @@
   - name: copying files
     copy:
       content: "{{gitout}}"
-      dest: /root/gitout1.txt
+      dest: /root/gitout2.txt
