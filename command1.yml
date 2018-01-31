@@ -23,6 +23,11 @@
     register: gitout
   - debug: var=gitout.stdout
   
+  - name: disk space
+    command: df -h
+    register: gitout
+  - debug: var=gitout.stdout
+  
   - name: copying files
     copy:
       content: "{{gitout}}"
