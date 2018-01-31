@@ -4,7 +4,7 @@
   gather_facts: False
   tasks:
   - name: running command
-    command: date
+    command: uptime
     register: gitout
   - debug: var=gitout.stdout
   
