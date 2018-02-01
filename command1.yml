@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: webser
   remote_user: root
   gather_facts: False
   tasks:
